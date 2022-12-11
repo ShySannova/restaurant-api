@@ -1,0 +1,22 @@
+http://localhost:8000/customer/signup
+
+
+{
+  "name":"Sandeep Prasad",
+  "email":"sandeep09prasad@gamil.com",
+  "contact":8388984715,
+  "password":"Sandeep123"
+}
+
+
+
+
+
+http://localhost:8000/restaurant/signin
+
+{
+  "name":"dhaba",
+  "email":"dhaba@gamil.com",
+  "contact":8388984715,
+  "password":"dhaba123"
+}
