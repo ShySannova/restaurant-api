@@ -13,6 +13,7 @@ const env = require("dotenv").config();
 //setting port variable & other variables
 let PORT= process.env.PORT || process.env.DEV_PORT;
 const CLI_DOMAIN = process.env.CLI_DOMAIN;
+const URI = process.env.URI;
 
 const stripe = require("stripe")(process.env.STRIPE_KEY);
 
@@ -97,7 +98,7 @@ app.post('/create-checkout-session', async (req, res) => {
 // .then(()=>{
 //     console.log("Database Connection Successful");
 // })
-mongoose.connect('mongodb+srv://ShySan:Batch08@cluster0.mranl.mongodb.net/food_order')
+mongoose.connect(`${URI}`)
 .then(()=>{
     console.log("Database Connection Successful");
 })
